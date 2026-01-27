@@ -1,2 +1,2 @@
-# pjakt_zum
+# pjatk_zum
 zum final project
