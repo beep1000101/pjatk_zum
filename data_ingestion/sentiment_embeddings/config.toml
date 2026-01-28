@@ -1,0 +1,20 @@
+[pipeline]
+name = "sentiment_embeddings"
+
+[paths]
+cache_root = ".cache"
+archive_filename = "aclImdb_v1.tar.gz"
+raw_dirname = "raw"
+provenance_filename = "provenance.json"
+
+[download]
+url = "https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz"
+expected_md5 = "7c2ac02c03563afcf9b574c7e56c153a"
+expected_bytes_min = 52428800
+expected_bytes_max = 524288000
+user_agent = "pjatk_zum-ingestion/1.0"
+timeout_seconds = 60
+
+[extract]
+sentinel_relpath = "aclImdb/README"
+expected_dirs = ["aclImdb/train", "aclImdb/test"]

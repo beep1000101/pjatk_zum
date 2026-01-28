@@ -10,3 +10,10 @@ Run ingestion per pipeline:
 - `python data_ingestion/sentiment_embeddings/run.py`
 - `python data_ingestion/asr_commands/run.py`
 - `python data_ingestion/clip_multimodal/run.py`
+
+Configuration:
+- Each ingestion script reads a per-pipeline TOML file:
+	- `data_ingestion/sentiment_embeddings/config.toml`
+	- `data_ingestion/asr_commands/config.toml`
+	- `data_ingestion/clip_multimodal/config.toml`
+- You can override the config path with `--config` and override cache root with `--cache-root`.

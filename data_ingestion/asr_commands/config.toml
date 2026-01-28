@@ -1,0 +1,23 @@
+[pipeline]
+name = "asr_commands"
+
+[paths]
+cache_root = ".cache"
+archive_filename = "mini_speech_commands.zip"
+raw_dirname = "raw"
+labels_filename = "labels.json"
+provenance_filename = "provenance.json"
+
+[download]
+url = "https://storage.googleapis.com/download.tensorflow.org/data/mini_speech_commands.zip"
+expected_bytes_min = 10485760
+expected_bytes_max = 524288000
+user_agent = "pjatk_zum-ingestion/1.0"
+timeout_seconds = 60
+
+[extract]
+sentinel_relpath = "mini_speech_commands/yes"
+extracted_root_dirname = "mini_speech_commands"
+
+[dataset]
+labels = ["down", "go", "left", "no", "right", "stop", "up", "yes"]

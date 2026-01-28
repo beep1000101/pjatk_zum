@@ -1,0 +1,44 @@
+[pipeline]
+name = "clip_multimodal"
+
+[paths]
+cache_root = ".cache"
+archive_filename = "cifar-10-python.tar.gz"
+raw_dirname = "raw"
+label_texts_filename = "label_texts.json"
+provenance_filename = "provenance.json"
+
+[download]
+url = "https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz"
+expected_md5 = "c58f30108f718f92721af3b95e74349a"
+expected_bytes_min = 104857600
+expected_bytes_max = 314572800
+user_agent = "pjatk_zum-ingestion/1.0"
+timeout_seconds = 60
+
+[extract]
+sentinel_relpath = "cifar-10-batches-py/batches.meta"
+extracted_root_dirname = "cifar-10-batches-py"
+expected_files = [
+  "batches.meta",
+  "test_batch",
+  "data_batch_1",
+  "data_batch_2",
+  "data_batch_3",
+  "data_batch_4",
+  "data_batch_5",
+]
+
+[dataset]
+label_texts = [
+  "airplane",
+  "automobile",
+  "bird",
+  "cat",
+  "deer",
+  "dog",
+  "frog",
+  "horse",
+  "ship",
+  "truck",
+]
