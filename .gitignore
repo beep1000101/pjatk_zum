@@ -1,6 +1,7 @@
 /.cache/
 past_work/
 .llm_planning/
+.vscode
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
