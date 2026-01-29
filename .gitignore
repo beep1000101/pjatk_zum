@@ -3,6 +3,7 @@ past_work/
 .llm_planning/
 .vscode
 models/
+outputs/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
