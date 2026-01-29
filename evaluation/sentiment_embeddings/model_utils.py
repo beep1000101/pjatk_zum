@@ -1,7 +1,6 @@
 """
 Model loading and preprocessing utilities for sentiment embeddings evaluation.
 """
-from pathlib import Path
 import torch
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 import pandas as pd

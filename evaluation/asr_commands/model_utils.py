@@ -1,7 +1,6 @@
 """
 Model loading and preprocessing utilities for ASR commands evaluation.
 """
-from pathlib import Path
 import torch
 from transformers import AutoModelForAudioClassification, AutoFeatureExtractor
 from datasets import Dataset, Audio

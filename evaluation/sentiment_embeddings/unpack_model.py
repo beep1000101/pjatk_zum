@@ -3,7 +3,6 @@ Unpack archived sentiment embeddings model to .cache/sentiment_embeddings for ev
 """
 from pathlib import Path
 import shutil
-import os
 
 
 def unpack_model(archive_path, unpack_dir):

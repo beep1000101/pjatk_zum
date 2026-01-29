@@ -3,7 +3,6 @@ Unpack archived ASR commands model to .cache/asr_commands for evaluation.
 """
 from pathlib import Path
 import shutil
-import os
 
 
 def unpack_model(archive_path, unpack_dir):

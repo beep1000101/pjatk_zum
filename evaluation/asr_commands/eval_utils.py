@@ -1,7 +1,6 @@
 """
 Helper functions for ASR commands model evaluation.
 """
-import numpy as np
 from sklearn.metrics import accuracy_score, f1_score, confusion_matrix, classification_report
 
 

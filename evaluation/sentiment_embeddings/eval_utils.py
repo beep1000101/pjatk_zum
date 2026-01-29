@@ -1,7 +1,6 @@
 """
 Helper functions for sentiment embeddings model evaluation.
 """
-import numpy as np
 from sklearn.metrics import accuracy_score, f1_score, confusion_matrix, classification_report
 
 

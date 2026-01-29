@@ -1,7 +1,6 @@
 """
 Model loading and preprocessing utilities for CLIP multimodal evaluation.
 """
-from pathlib import Path
 import torch
 from transformers import CLIPModel, CLIPProcessor
 import pandas as pd
